@@ -1,0 +1,112 @@
+.Inputs {
+  background-color: #1f2833;
+  padding: 24px;
+  margin: 0 auto;
+  padding-top: 48px;
+}
+
+.Row {
+  display: flex;
+  column-gap: 10px;
+}
+
+input,
+select {
+  padding: 12px;
+  width: 100%;
+  background: none;
+  border: 2px solid white;
+  color: #fff;
+  font-size: 16px;
+}
+
+.Input {
+  flex: 1;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  li {
+    margin-bottom: 16px;
+  }
+}
+
+.Buttons {
+  display: flex;
+  column-gap: 10px;
+  button {
+    flex: 1;
+    background: none;
+    color: #fff;
+    border: 2px solid white;
+    padding: 8px 24px;
+    font-size: 24px;
+    transition: background-color 0.4s;
+    &:hover {
+      cursor: pointer;
+      background: rgba(255, 255, 255, 0.2);
+    }
+  }
+}
+
+.TotalExpenses {
+  margin-top: 48px;
+  color: #fff;
+}
+
+.RemoveButton {
+  color: rgba(240, 75, 64);
+  background: none;
+  border: 2px solid rgba(240, 75, 64);
+  transition: background-color 0.4s;
+  min-width: 50px;
+  &:hover {
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.2);
+  }
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.Expenses {
+  animation: fadeIn 0.8s;
+  display: flex;
+  max-width: 960px;
+  column-gap: 24px;
+  margin: 0 auto;
+  margin-top: 24px;
+  padding-bottom: 24px;
+  flex-flow: wrap;
+  row-gap: 24px;
+  .Expense {
+    flex: 1;
+    background: #1f2833;
+    color: #fff;
+    margin: 0 auto;
+    padding: 40px;
+    &.Total {
+      font-weight: bolder;
+      font-size: 20px;
+      &p {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
